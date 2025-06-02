@@ -29,8 +29,14 @@
             <input type="search" name="search" id="search" placeholder="search Task..."
                 class="border-[1.5px] border-solid border-[#000] bg-gray-50 placeholder:text-left placeholder:pl-4 sm:placeholder:pl-2  sm:placeholder:text-center rounded-[20px] md:w-[400px] lg:w-[400px] xl:w-[400px] 2xl:w-[400px] text-center p-2">
         </div>
-        <div class="text-[30px] cursor-pointer">
-            <span class="material-symbols-outlined text-black text-center">person</span>
+        <div class="text-[30px] cursor-pointer relative" id="profileIcon">
+            
+            <div id="dropdownMenu" class=" absolute right-0  bg-red-800 shadow-md rounded-md w-max grid p-4">
+                
+                <span class="material-symbols-outlined cursor-pointer text-white rounded-md "  onclick="logout()">
+                    logout
+                </span>
+            </div>
         </div>
     </div>
     <!-- main -->
